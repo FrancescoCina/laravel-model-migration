@@ -8,18 +8,18 @@
 @endsection
 
     @section('content')
-    <section id="travels">
-        <ul>
-            @forelse ($travels as $travel)
-            <li>{{ $travel['destination'] }}</li>    
-            <li>{{ $travel['price'] }}</li>
-            <li>Departure: {{ $travel['departure_date'] }}</li>    
-            <li>Landing: {{ $travel['return_date'] }} }}</li>    
+    <section id="travels" class="d-flex justify-content-center">
+        @forelse ($travels as $travel)
+        <div class="my-5">
+            <h3>{{ $travel['destination'] }}</h3>    
+            <h4>{{ $travel['price'] }}</h4>
+            <h6>Departure: {{ $travel['departure_date'] }}</h6>    
+            <h6>Landing: {{ $travel['return_date'] }} }}</h6>    
             @empty
             <h1>Non ci sono viaggi disponibili</h1>    
+        </div>
             @endforelse
             
-        </ul>
     </section>
 
 @endsection

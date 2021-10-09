@@ -8,14 +8,14 @@
 @endsection
 
 @section('content')
-    <section id="transports">
-        <ul>
-            @forelse ($transports as $transport)
-            <li>{{ $transport['vehicle'] }}</li>    
+    <section id="transports" class="d-flex justify-content-center">
+        @forelse ($transports as $transport)
+        <div class="my-5">
+            <h3> Vehicle: {{ $transport['vehicle'] }}</h3>    
             @empty
             <h1>Nessun veicolo disponibile per il viaggio</h1>    
-            @endforelse
             
-        </ul>
+        </div>
+        @endforelse
     </section>
 @endsection
