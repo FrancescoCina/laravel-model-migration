@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prova</title>
-</head>
-<body>
-    prova
-</body>
-</html>
+@extends('layouts.main')
+
+@section('title', 'Travel Agency | Home')
+
+@section('title_page')
+<h1 class="my-5 text-center">Travel Agency Home</h1>
+@endsection
+
+@section('content')
+    <h2 class="text-center">Benvenuto nella Home Page di Travel Agency</h2>
+@endsection
